@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-boilerplate",
-  "version": "2.0.0",
-  "description": "Minimalistic ES6 React boilerplate",
+  "name": "data-visualization",
+  "version": "0.0.1",
+  "description": "data visualization test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -14,7 +14,7 @@
     "precommit": "cross-env npm run lint && npm test",
     "prepush": "cross-env npm run lint && npm test"
   },
-  "author": "Kliment Petrov <kleopetroff@gmail.com>",
+  "author": "Wendy Wang",
   "license": "MIT",
   "jest": {
     "setupFiles": [
@@ -29,11 +29,16 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "cross-env": "5.1.1",
+    "lodash": "^4.17.4",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-hot-loader": "3.1.1",
-    "react-router-dom": "4.2.0"
+    "react-router-dom": "4.2.0",
+    "recharts": "^1.0.0-beta.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

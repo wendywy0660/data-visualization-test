@@ -1,5 +1,32 @@
-$color: #262828;
+@import './variables';
+
+html {
+  box-sizing: border-box;
+}
 
 body {
-  color: $color;
+  color: $text-color;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.allocation,
+.comparison {
+  overflow: hidden;
+}
+
+.allocation-chart {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 1 1 400px;
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+.select-box {
+  font-size: 14px;
+  height: 28px;
+  margin: 0 20px 0 8px;
 }
