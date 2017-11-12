@@ -33,8 +33,8 @@ class Allocation extends React.Component {
     const bars = [{ name: 'PNs', key: 'pn' }, { name: 'Face values', key: 'face' }];
     return (
       <div className="allocation">
-        <h3 id="heading">Split based on categories</h3>
-        <form>
+        <h3 className="heading">Split based on categories</h3>
+        <form className="view-controller">
           <label htmlFor="selectYear">
             Select Year:
             <select className="select-box" name="selectYear" value={this.state.selectedYear} onChange={this.handleYearChange}>

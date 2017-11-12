@@ -18,8 +18,8 @@ class Comparison extends React.Component {
     YEARSMAP.map(year => ({ name: `YEAR ${year}`, key: `year${year}` }));
     return (
       <div className="comparison">
-        <h3 id="heading">Compare data by year</h3>
-        <form>
+        <h3 className="heading">Compare data by year</h3>
+        <form className="view-controller">
           <label htmlFor="selectFeature">
             Select Feature:
             <select className="select-box" name="selectFeature" value={this.state.selectedFeature} onChange={this.handleFeatureChange}>

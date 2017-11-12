@@ -41,13 +41,13 @@ class RCBarChart extends Component {
             />
 
             { biaxial && <YAxis
-                yAxisId="right"
-                orientation="right"
-                tickLine={false}
-                axisLine={false}
-                label={{ value: yAxisLabel2, dx: -30, fill: axisLabelColor, fontSize: 12 }}
-                tickFormatter={this.yaxisConverter}
-              />
+              yAxisId="right"
+              orientation="right"
+              tickLine={false}
+              axisLine={false}
+              label={{ value: yAxisLabel2, dx: -30, fill: axisLabelColor, fontSize: 12 }}
+              tickFormatter={this.yaxisConverter}
+            />
             }
             <Tooltip />
             <Legend verticalAlign="bottom" payload={legend} />
@@ -88,7 +88,7 @@ RCBarChart.propTypes = {
   data: PropTypes.array.isRequired,
   bars: PropTypes.array,
   biaxial: PropTypes.bool,
-  yAxisLabel2:PropTypes.string,
+  yAxisLabel2: PropTypes.string,
 };
 
 export default RCBarChart;
