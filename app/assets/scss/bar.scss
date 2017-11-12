@@ -1,25 +1,23 @@
-@import '../../../assets/scss/variables';
+@import './variables';
 
-.rc-pie-chart {
+.rc-bar-chart {
   .recharts-responsive-container {
     margin: 0 auto;
   }
 
   .recharts-legend-wrapper {
     text-align: center;
-    transform: translate3d(10px, 50px, 0);
+    transform: translate3d(25px, 30px, 0);
 
     @media (max-width: $screen-tablet) {
-      transform: translate3d(0, 50px, 0);
+      transform: translate3d(0, 30px, 0);
     }
   }
 
   .recharts-default-legend {
     border: 1px solid $grey;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2px 24px !important;
+    display: inline-block;
+    padding: 2px 5px !important;
   }
 
   .recharts-legend-item {
@@ -32,6 +30,12 @@
     color: $grey-dark;
     font-size: 10px;
     position: static;
+  }
+
+  .recharts-yAxis {
+    .recharts-label {
+      transform: translate3d(-110px, 150px, 0) rotate(-90deg);
+    }
   }
 
   .title {

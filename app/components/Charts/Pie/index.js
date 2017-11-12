@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from 'recharts';
 import classnames from 'classnames';
 
-import './style.scss';
-
 class RCPieChart extends Component {
   render () {
     const { title, className, width, height } = this.props;

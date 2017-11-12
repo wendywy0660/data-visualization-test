@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Legend, CartesianGrid, ResponsiveContainer, Tooltip } from 'recharts';
 import classnames from 'classnames';
 
-import './style.scss';
-
 class RCBarChart extends Component {
   yaxisConverter = (value) => {
     const { yAxisFormatter } = this.props;
